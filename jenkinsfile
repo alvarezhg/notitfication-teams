@@ -1,0 +1,15 @@
+pipeline {
+  agent any
+  stages {
+    stage('Development') {
+      steps {
+        sh 'echo "This is my first Pipeline"'
+            }
+        }
+    stage('Staging') {
+      steps {
+        sh 'echo "Deployin to staging environmen"'
+            }
+        }
+    }
+}
