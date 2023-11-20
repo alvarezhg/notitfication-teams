@@ -3,13 +3,15 @@ pipeline {
   stages {
     stage('Development') {
       steps {
-        sh 'echo "This is the CI process and deploy to Dev Environemnt'
-            }
-        }
+        sh 'echo "CI Procees and Deploy to Development"'
+      }
+    }
+
     stage('Staging') {
       steps {
-        sh 'echo "Deployin to staging environmen"'
-            }
-        }
+        echo 'Deploying to Staging Environment'
+      }
     }
+
+  }
 }
