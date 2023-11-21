@@ -9,7 +9,7 @@ pipeline {
 
     stage('Staging') {
       steps {
-        echo 'Deploying to Staging Environment'
+        echo 'Promote to Staging Environment'
       }
     }
 
